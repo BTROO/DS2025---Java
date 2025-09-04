@@ -1,0 +1,9 @@
+package Atividade2;
+
+public class Main {
+    public static void main(String[] args) {
+        Motoboy motoboy = new Motoboy("Claudio", "01/01/2001", Sexo.MASCULINO, Setor.OPERACOES, 1518.0, "B");
+
+        Diretor diretor = new Diretor("luiz", "02/02/1992", Sexo.MASCULINO, Setor.RECURSOS_HUMANOS, 5892, );
+
+    }

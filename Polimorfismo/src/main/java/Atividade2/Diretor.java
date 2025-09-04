@@ -1,6 +1,6 @@
 package Atividade2;
 
-public class Diretor extends Funcionario{
+public class Diretor extends Funcionario implements Contratacao {
     private final double PREMIO = 0.2;
 
     public Diretor(String nome, String dataNascimento, Sexo sexo, Setor setor, double salarioBase) {
@@ -9,6 +9,21 @@ public class Diretor extends Funcionario{
 
     public double getPREMIO() {
         return PREMIO;
+    }
+
+    @Override
+    public void admitir(Funcionario funcionario) {
+        System.out.println("Funcionário contratado: " + funcionario.getNome());
+    }
+
+    @Override
+    public void demitir(Funcionario funcionario){
+        System.out.println("Funcionário demitido: " + funcionario.getNome());
+    }
+
+    @Override
+    public double getSalarioFinal(){
+        return salarioBase + (salarioBase * PREMIO);
     }
 
     @Override
@@ -22,21 +37,4 @@ public class Diretor extends Funcionario{
                 ", salarioBase=" + salarioBase +
                 '}';
     }
-
-    @Override
-    public void admitir(Funcionario funcionario) {
-        System.out.println("Funcionário contratado" + funcionario.getNome());
-    }
-
-    @Override
-    public  void demitir(Funcionario funcionario){
-        System.out.println("Funcionário demitido" + funcionario.getNome());
-    }
-
-    @Override
-    public abstract double getSalarioFinal(){
-        return salarioBase (salarioBase * PREMIO);
-    }
-
-
 }

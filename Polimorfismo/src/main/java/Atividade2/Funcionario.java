@@ -15,7 +15,7 @@ public abstract class Funcionario {
         this.salarioBase = salarioBase;
     }
 
-    public abstract double getSalarioFinal;
+    public abstract double getSalarioFinal();
 
     public String getNome() {
         return nome;

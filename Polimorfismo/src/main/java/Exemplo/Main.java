@@ -1,7 +1,9 @@
+package Exemplo;
+
 public class Main {
     public static void main(String[] args) {
         Cachorro cachorro = new Cachorro();
-        Gato gato = new Gato();
+        Animal.Gato gato = new Animal.Gato();
         Pato pato = new Pato();
         Galo galo = new Galo();
 

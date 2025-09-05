@@ -26,6 +26,5 @@ public class Main {
         System.out.println("Salário Final Diretor: R$" + diretor.getSalarioFinal());
 
         diretor.admitir(motoboy);
-        diretor.demitir(motoboy);
     }
 }

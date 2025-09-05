@@ -1,3 +1,5 @@
+package Exemplo;
+
 public class Galo implements Animal {
 
     public Galo() {
